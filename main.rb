@@ -3,7 +3,7 @@ require 'colorize'
 world = [[0,1,0],[1,0,1],[1,1,0]]
 states = {
     alive: "● ".colorize(:light_red),
-    death: "○ ".colorize(:yellow),
+    death: "○ ".colorize(:light_yellow),
 }
 
 
