@@ -1,8 +1,8 @@
 require 'colorize'
 
-@width = 3 # future constants to generate @world
-@height = 3
-@world = [[0,1,0],[1,0,1],[1,1,0]]
+@width = 10 # future constants to generate @world
+@height = 10
+@world = Array.new(@width) { Array.new(@height) {rand(2)} }
 states = {
     alive: "● ".colorize(:light_red),
     death: "○ ".colorize(:light_yellow),
